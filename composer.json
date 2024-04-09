@@ -1,0 +1,20 @@
+{
+    "name": "evertrust/filament-theme",
+    "description": "A Filament theme for EVERTRUST",
+    "type": "library",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Evertrust\\FilamentTheme\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antonin",
+            "email": "agu@evertrust.fr"
+        }
+    ],
+    "require": {
+        "filament/filament": "^3.0"
+    }
+}

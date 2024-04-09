@@ -1,0 +1,76 @@
+@import '../../vendor/filament/filament/resources/css/theme.css';
+
+@config './tailwind.config.js';
+
+@layer components {
+
+    /* General layout */
+    :root {
+        --sidebar-width: 13rem !important;
+    }
+
+    .fi-main {
+        @apply bg-[#f5f7fe] dark:bg-[#0a1621] mx-0 !important;
+    }
+
+    .fi-main section:first-of-type {
+        @apply gap-y-2 !important;
+    }
+
+    .fi-header-heading {
+        @apply text-primary-600 tracking-wide !important;
+    }
+
+    /* Sidebar */
+
+    .fi-sidebar:not(.fi-sidebar-header) {
+        @apply bg-gradient-to-b from-[#030b1b] to-[#253442] from-50%;
+        background-color: #131c2a;
+    }
+
+    .fi-sidebar-item:not(.fi-sidebar-item-active) span {
+        @apply text-white hover:text-gray-100;
+    }
+
+    .fi-sidebar-item:hover .fi-sidebar-item-icon, .fi-sidebar-item:hover span, .fi-sidebar-item:not(.fi-sidebar-item-active) span:hover {
+        @apply text-primary-600;
+    }
+
+    .fi-sidebar-nav {
+        @apply px-3 !important;
+    }
+
+    /* Tables layout */
+
+    .fi-ta-table thead tr {
+        @apply bg-[#030b1b] text-white rounded-xl !important;
+    }
+
+    .fi-ta-table thead th:first-of-type {
+        @apply rounded-l-xl;
+    }
+
+    .fi-ta-table thead th:last-of-type {
+        @apply rounded-r-xl;
+    }
+
+    .fi-ta-header-cell-label {
+        @apply text-white !important;
+    }
+
+    .fi-ta-header-toolbar {
+        @apply px-0.5 sm:px-0.5 !important;
+    }
+
+    .fi-ta-header-toolbar .ms-auto {
+        @apply pr-4 !important;
+    }
+
+    .fi-ta-ctn {
+        @apply bg-transparent border-none ring-0 !important;
+    }
+
+    .fi-ta-filter-indicators {
+        @apply bg-transparent !important;
+    }
+}
