@@ -16,5 +16,12 @@
     ],
     "require": {
         "filament/filament": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Evertrust\\FilamentTheme\\EvertrustPluginServiceProvider"
+            ]
+        }
     }
 }
