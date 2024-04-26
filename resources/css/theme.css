@@ -27,20 +27,48 @@
 
     /* Sidebar */
     .fi-sidebar:not(.fi-sidebar-header) {
-        @apply bg-gradient-to-b from-[#030b1b] to-[#253442] from-50%;
-        background-color: #131c2a;
-    }
-
-    .fi-sidebar-item:not(.fi-sidebar-item-active) span {
-        @apply text-white hover:text-gray-100;
-    }
-
-    .fi-sidebar-item:hover .fi-sidebar-item-icon, .fi-sidebar-item:hover span, .fi-sidebar-item:not(.fi-sidebar-item-active) span:hover {
-        @apply text-primary-600;
+        @apply bg-gradient-to-b from-[#030b1b] to-[#253442] from-50% !important;
+        background-color: #131c2a !important;
     }
 
     .fi-sidebar-nav {
         @apply px-3 !important;
+    }
+
+    .fi-sidebar-nav {
+        .fi-sidebar-item-button {
+            @apply rounded-2xl px-3 py-3 !important;
+        }
+
+        /* Manage inactive sidebar items*/
+        .fi-sidebar-item:not(.fi-sidebar-item-active) {
+            .fi-sidebar-item-icon {
+                @apply text-white !important;
+            }
+
+            span {
+                @apply text-white dark:hover:text-primary-600 !important;
+            }
+        }
+
+        /* White bg for active items */
+        .fi-sidebar-item-active > .fi-sidebar-item-button {
+            @apply bg-white !important;
+        }
+
+        /* White bg for hovered items */
+        .fi-sidebar-item-button {
+            @apply dark:hover:bg-white;
+        }
+
+
+        .fi-sidebar-item:hover .fi-sidebar-item-icon, .fi-sidebar-item:hover span {
+            @apply text-primary-400 dark:text-primary-400 !important;
+        }
+
+        .fi-sidebar-item-label {
+            @apply text-xs tracking-wider !important;
+        }
     }
 
     /* Tables layout */
@@ -49,11 +77,11 @@
     }
 
     .fi-ta-table thead th:first-of-type {
-        @apply rounded-l-xl;
+        @apply rounded-l-xl !important;
     }
 
     .fi-ta-table thead th:last-of-type {
-        @apply rounded-r-xl;
+        @apply rounded-r-xl !important;
     }
 
     .fi-ta-header-cell-label {
@@ -77,15 +105,15 @@
     }
 
     .fi-in-entry-wrp-label span {
-        @apply text-gray-400;
+        @apply text-gray-400 !important;
     }
 
     .fi-in-text-item div {
-        @apply text-black;
+        @apply text-black !important;
     }
 
     .fi-in-entry-wrp .grid {
-        @apply gap-y-0;
+        @apply gap-y-0 !important;
     }
 
     .fi-section:has(.fi-section-header) .fi-section-content {
@@ -93,6 +121,6 @@
     }
 
     .fi-section-content-ctn {
-        @apply border-none;
+        @apply border-none !important;
     }
 }

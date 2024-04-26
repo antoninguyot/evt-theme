@@ -24,7 +24,6 @@ class EvertrustPlugin implements Plugin
             ->colors([
                 'primary' => $primary,
             ])
-            ->darkMode(false)
             ->middleware([
                 \Evertrust\FilamentTheme\Http\Middleware\RegisterTheme::class,
             ]);
