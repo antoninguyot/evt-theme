@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "filament/filament": "^3.0"
+        "filament/filament": "^3.0",
+        "blade-ui-kit/blade-icons": "^1.6"
     },
     "extra": {
         "laravel": {

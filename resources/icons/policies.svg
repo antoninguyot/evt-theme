@@ -1,0 +1,16 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24" id="Policies">
+  <defs>
+    <clipPath>
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip-IconPolicies)">
+    <g id="Regular_1.5px_sort" data-name="Regular 1.5px/sort" transform="translate(4.25 6.25)">
+      <g id="Group">
+        <path id="Path_13_Copy_5_Stroke_" data-name="Path 13 Copy 5 (Stroke)" d="M.75,0h15a.75.75,0,0,1,0,1.5H.75A.75.75,0,0,1,.75,0Z"/>
+        <path id="Path_13_Copy_6_Stroke_" data-name="Path 13 Copy 6 (Stroke)" d="M.75,0h10a.75.75,0,0,1,0,1.5H.75A.75.75,0,0,1,.75,0Z" transform="translate(0 5)"/>
+        <path id="Path_13_Copy_7_Stroke_" data-name="Path 13 Copy 7 (Stroke)" d="M.75,0h6a.75.75,0,0,1,0,1.5h-6A.75.75,0,0,1,.75,0Z" transform="translate(0 10)"/>
+      </g>
+    </g>
+  </g>
+</svg>

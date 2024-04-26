@@ -61,13 +61,16 @@
             @apply dark:hover:bg-white;
         }
 
-
         .fi-sidebar-item:hover .fi-sidebar-item-icon, .fi-sidebar-item:hover span {
             @apply text-primary-400 dark:text-primary-400 !important;
         }
 
         .fi-sidebar-item-label {
             @apply text-xs tracking-wider !important;
+        }
+
+        .fi-sidebar-item-icon {
+            @apply h-5 w-5 !important;
         }
     }
 
