@@ -20,10 +20,15 @@ class EvertrustPlugin implements Plugin
         $primary[600] = '75, 109, 209';
 
         $panel
-            ->maxContentWidth('full')
             ->colors([
                 'primary' => $primary,
             ])
+            ->brandName('EVERTRUST')
+            ->favicon('https://evertrust.io/media/logo-sigle-blue.png')
+            ->brandLogo('https://evertrust.io/media/logo-horizontal-blue.png')
+            ->darkModeBrandLogo('https://evertrust.io/media/logo-horizontal-white.png')
+            ->brandLogoHeight('auto')
+            ->maxContentWidth('full')
             ->middleware([
                 \Evertrust\FilamentTheme\Http\Middleware\RegisterTheme::class,
             ]);

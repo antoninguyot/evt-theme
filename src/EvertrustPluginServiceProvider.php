@@ -5,7 +5,7 @@ namespace Evertrust\FilamentTheme;
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
 use Illuminate\Support\ServiceProvider;
-use BladeUI\Icons\Factory;
+use BladeUI\Icons\Factory as BladeIconFactory;
 
 class EvertrustPluginServiceProvider extends ServiceProvider
 {
@@ -21,7 +21,7 @@ class EvertrustPluginServiceProvider extends ServiceProvider
             ], 'evertrust-icons');
         }
 
-        $this->callAfterResolving(Factory::class, function (Factory $factory) {
+        $this->callAfterResolving(BladeIconFactory::class, function (BladeIconFactory $factory) {
             $factory->add('evertrust', array_merge(['path' => __DIR__.'/../resources/icons'], [
                 'prefix' => 'evertrust'
             ]));
