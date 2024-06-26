@@ -75,6 +75,11 @@
     }
 
     /* Tables layout */
+
+    .fi-ta-content {
+        @apply rounded-t-xl !important;
+    }
+
     .fi-ta-table thead tr {
         @apply bg-[#030b1b] text-white rounded-xl !important;
     }
