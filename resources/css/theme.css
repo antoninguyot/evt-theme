@@ -75,6 +75,12 @@
     }
 
     /* Tables layout */
+
+    /* TODO: improve table rounded handling on Firefox. In the meantime, this rounds the top container */
+    .fi-ta-content {
+        @apply rounded-t-xl !important;
+    }
+
     .fi-ta-table thead tr {
         @apply bg-[#030b1b] text-white rounded-xl !important;
     }
